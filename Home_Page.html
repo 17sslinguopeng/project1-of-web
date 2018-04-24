@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script src="javascript/jquery-3.3.1.js"></script>
+    <script src="javascript/Home_Page.js"></script>
+    <script src="javascript/cookie.js"></script>
+    <script src="javascript/login.js"></script>
+    <script src="javascript/register.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/login_and_register.css">
+    <link rel="stylesheet" type="text/css" href="css/Home_page.css">
+
+</head>
+<body>
+<header>
+
+    <div class="slider">
+
+        <div id="logo">
+            <em class="white" style="font-size: 2em ;font-family: Papyrus">Art Store</em>
+            <em class="darkgray" style="font-family: 'Brush Script MT'">where you find GENIUS and EXTROORDINARY</em>
+        </div>
+        <nav class="before_login">
+            <a href="">首页</a>
+            <a href="Search_page.html">搜索</a>
+            <a href="Goods_page.html">详情</a>
+            <a href="javascript:void(0)" onclick="login()">登陆</a>
+            <a href="javascript:void(0)" onclick="register()">注册</a>
+        </nav>
+        <nav class="after_login">
+            <a href="shopping_cart_page.html">购物车</a>
+            <a href="Personal_information_page.html">我的信息</a>
+            <a href="Goods_page.html">详情</a>
+            <a href="Search_page.html">搜索</a>
+            <a href="javascript:void(0) " onclick="outLogin()">注销</a>
+        </nav>
+        <div id="center">
+            <h3 class="white" style="font-family:'Bangla MN' " id="workName">family</h3>
+            <p class="darkgray" id="workIntroduction" style="font-family:'Apple Chancery';width: 600px">Presenting an entirely fresh way of looking at art, this book is an invaluable resource for reference and inspiration in every"</p>
+            <a href="Goods_page.html"> <button id="1" onclick="window.location(Goods_page.html)" style="cursor: pointer">Learn More</button></a>
+        </div>
+
+
+
+        <ul class="slider-main">
+            <li class="slider-panel">
+                <img src="images/works/large/134030.jpg">
+            </li>
+            <li class="slider-panel">
+              <img src="images/works/large/021040.jpg">
+            </li>
+            <li class="slider-panel">
+               <img src="images/works/large/008020.jpg">
+            </li>
+            <li class="slider-panel">
+                <img src="images/works/large/063020.jpg">
+            </li>
+        </ul>
+            <ul class="slider-nav">
+                <li class="slider-item">1</li>
+                <li class="slider-item">2</li>
+                <li class="slider-item">3</li>
+                <li class="slider-item">4</li>
+            </ul>
+
+                <a class="slider-pre slider-page" href="javascript: void(0)"> < </a>
+                <a class="slider-next slider-page" href="javascript: void (0)"> > </a>
+
+
+    </div>
+</header>
+    <div id="position">
+
+        <section id="section1">
+            <img src="images/artists/square-medium/133.jpg">
+            <h3>The Starry Night</h3>
+            <p >'The Starry Night' was not Van Gogh's first depiction
+                of a night sky. In Arles, he had been proud of his
+                painting of the stars and the reflection of the
+                lights of the town in the River Rhône。one of the
+                first results of a plan intimated
+                to Emile Bernard in April 1888.
+
+            </p>
+            <a href="Goods_page.html"> <button>View Details</button></a>
+        </section>
+        <section id="section2">
+            <img src="images/artists/square-medium/137.jpg">
+            <h3>Oil on canvas</h3>
+            <p>Vincent van Gogh's The Cafe Terrace stands
+                as one of the painter's most remarkable works.
+                It is also, without question, one of the most famous
+                produced in Van Gogh's brief but prolific career.
+                This work is the first in a trilogy1 of paintings
+                which feature starlit skies.
+            </p>
+            <a href="Goods_page.html"> <button>View Details</button></a>
+        </section>
+        <section id="section3">
+            <img src="images/artists/square-medium/138.jpg">
+            <h3>Portrait of Elenor Toloks</h3>
+            <p> He is universally recognized arts master and
+                great scientist. 15 April 1452 According to sunrise in
+                Italy and Central Florence near Fenqi City (Vinci),and spent his childhood
+                there.1469,he came to Florence and apprenticeship
+                in Verrocchio's studio.1472,entered in the painter
+            </p>
+            <a href="Goods_page.html"> <button>View Details</button></a>
+        </section>
+        <div class="footer">
+            <p class="darkgray">
+                Produced and maintained by Rsnut at 2016.4.12
+            </p>
+        </div>
+
+    </div>
+
+<div id="LoginBox" >
+
+
+
+
+    <button title="关闭窗口" class="close_btn" id="close_btn">×</button>
+    <br>
+    <br>
+    <div class="row1">
+        Welcome to Art Store
+    </div>
+
+    <div class="row">
+        用户名:
+        <input type="text" id="txtName" placeholder="账号" />
+
+    </div>
+    <label id="login_txtName_Warning"></label>
+
+    <div class="row">
+        密&nbsp;&nbsp;&nbsp;&nbsp;码:
+        <input type="password" id="txtPwd" placeholder="密码"  />
+
+    </div>
+    <label id="login_txtPwd_Warning"></label>
+
+    <div class="row">
+        <span id="rand_code"></span>
+        <input id="security_code" type="number" placeholder="验证码" >
+
+    </div>
+
+    <label id="login_Security_Warning"></label>
+
+
+    <br>
+    <button id="login">登 陆</button>
+
+
+
+</div>
+
+<div id="registerbox" >
+    <button title="关闭窗口" class="close_btn" id="close_btn2">×</button>
+    <br>
+    <br>
+    <div class="row1">
+        Welcome to Art Store
+    </div>
+    <div class="input">
+
+        <div class="row2">
+            账号：<input type="" id="register_Name" placeholder="账号" />
+        </div>
+
+        <label id="register_Name_Warning" class="warning" style="text-align: center"></label>
+
+        <div class="row2">
+            密码：<input type="password" id="register_Pwd" placeholder="密码"  />
+        </div>
+
+        <label id="register_Pwd_Warning" class="warning" style="text-align: center"></label>
+
+        <div class="row2">
+            确认密码：<input type="password"  placeholder="再次输入密码" id="register_PwdEnsure" />
+        </div>
+
+        <label id="register_PwdEnsure_Warning" class="warning" style="text-align: center"></label>
+        <div class="row2">
+
+            电子邮箱: <input id="register_email" type="text" placeholder="电子邮箱" >
+        </div>
+        <label id="register_email_Warning" class="warning" style="text-align: center"></label>
+
+        <div class="row2">
+            <span id="register_rand_code"></span>
+            <input id="register_security_code" type="number" placeholder="验证码" >
+        </div>
+
+
+    </div>
+    <button id="register">注册</button>
+
+
+
+</div>
+
+    <div class="mask">
+    </div>
+     <span class="page_information">首页</span>
+</body>
+</html>

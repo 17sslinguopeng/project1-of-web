@@ -1,0 +1,69 @@
+html{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+#cart{
+    position: absolute;
+    left: 10%;
+    top: 100%;
+}
+h3,p{
+    margin: 1em;
+    font-family: "Times New Roman";
+    font-style: italic;
+}
+#center{
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    background-color: gainsboro;
+    width: 80%;
+    height: auto;
+    padding: 3em;
+}
+section{
+    background-color: burlywood;
+    font-family: "Times New Roman";
+    padding: 1em;
+}
+img{
+    float: left;
+    margin: 1em;
+}
+.button1{
+    margin: 1em;
+    width: 200px;
+    height: 30px;
+}
+.delete{
+    margin: 1em;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 70%;
+    background-color: indianred;
+}
+#pay{
+    margin: 2em;
+    background-color: greenyellow;
+    width: 150px;
+    height: 30px;
+    float: right;
+}
+.empty{
+
+    text-align: center;
+    font-family: Kokonor;
+    color: indianred;
+    font-size: 20px;
+    display: none;
+ }
+.buttons button{
+    border: solid deepskyblue;
+    width: 50px;
+    height: 30px;
+    color: deepskyblue;
+    margin: 0em;
+    cursor: pointer;
+}

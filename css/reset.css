@@ -1,0 +1,22 @@
+.button1{
+    background-color: deepskyblue;
+    color: black;
+
+}
+.value{
+    color: red;
+    font-style: italic;
+}
+#position{
+    position: relative;
+    top: 50px;
+    left: -50px;
+    width: 100%;
+    height: 100%;
+}
+body{
+    min-width: 1000px;
+}
+.page_information{
+    display: none;
+}

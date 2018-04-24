@@ -1,0 +1,195 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    min-width: 1200px;
+}
+header{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+
+.slider,.slider-panel,.slider-main{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.slider-main img{
+    width: 100%;
+    height: 100%;
+}
+.slider-nav{
+    position: absolute;
+    top: 500px;
+    left: 47%;
+    text-align: center;
+}
+.slider-page{
+    color: #333333;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #999999;
+    z-index: 11;
+    font-size: 50px;
+    text-decoration:none;
+    text-align: center;
+    line-height: 50px;
+}
+.slider-pre{
+    position: absolute;
+    top: 45%;
+    left: 0.5em;
+}
+.slider-next{
+    position: absolute;
+    top: 45%;
+    right: 0.5em;
+}
+.slider-nav li {
+    background: #3e3e3e;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    margin: 0.2em;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    width: 18px;
+}
+.slider-item{
+    z-index: 20;
+    cursor: pointer;
+}
+
+#logo{
+    z-index: 20;
+    position: absolute;
+    left: 2em;
+    top: 0.5em;
+
+}
+.before_login{
+    position: absolute;
+    right: 2em;
+    top: 0.5em;
+    z-index: 20;
+}
+.after_login{
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 0.5em;
+    z-index: 20;
+}
+
+nav a{
+    margin: 2em;
+    color: dimgrey;
+    padding: 0.3em;
+    z-index: 20;
+}
+
+nav a:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.page_information{
+    display: none;
+}
+ #center{
+    position: absolute;
+    left: 29%;
+    top: 60%;
+    text-align: center;
+     z-index: 20;
+}
+#center button{
+    margin: 0.5em;
+    border: white;
+    border: solid;
+    color: darkgray;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 20;
+}
+#position{
+    position: relative;
+
+    left: 0em;
+    width: 100%;
+    text-align: center;
+}
+section{
+
+    margin: 2em;
+    width: 400px;
+    text-align: center;
+}
+#section1{
+    /*position: absolute;*/
+    /*left: 10%;*/
+    float: left;
+}
+#section2{
+    position: absolute;
+    left: 35%;
+
+}
+#section3{
+    /*position: absolute;*/
+    /*left: 70%;*/
+    float: right;
+}
+section img{
+    border-radius: 50%;
+}
+section p{
+    font-style: italic;
+    font-family: Baskerville;
+}
+section button{
+    background-color: deepskyblue;
+    color: white;
+}
+section h3{
+    font-family: Papyrus;
+}
+.footer{
+    position: absolute;
+    background-color:black;
+    top: 25em;
+    height: 40px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-family: "Times New Roman";
+    font-style: italic;
+}
+button{
+    width: 150px;
+    height: 40px;
+}
+section button{
+    cursor: pointer;
+}
+.slider-nav .slider-item-selected {
+    background: blue;
+}
+.white{
+    color: white;
+}
+.darkgray{
+    color: darkgray;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <script src="javascript/jquery-3.3.1.js"></script>
+    <script src="javascript/login.js"></script>
+    <script src="javascript/register.js"></script>
+    <script src="javascript/shopping_cart.js"></script>
+    <script src="javascript/cookie.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/top.css">
+    <link rel="stylesheet" type="text/css" href="css/login_and_register.css">
+    <link rel="stylesheet" type="text/css" href="css/shopping_cart.css">
+</head>
+<body>
+
+        <div class="top">
+            <em class="welcome">
+                欢迎来到Art Store
+            </em>
+            <label id="userName">未登录</label>
+
+            <span class="before_login">
+                      <a href="Home_page.html">首页</a>
+                       <a href="javascript:void(0)" onclick="login()">登陆</a>
+                                  <a href="javascript:void(0)" onclick="register()">注册</a>
+                      <a href="Search_page.html">搜索</a>
+                  </span>
+
+            <span class="after_login">
+                      <a href="Home_page.html">首页</a>
+                      <a href="shopping_cart_page.html">购物车</a>
+                      <a href="Personal_information_page.html">个人信息</a>
+                      <a href="Search_page.html">搜索</a>
+                      <a href="javascript:void(0) " onclick="outLogin()">注销</a>
+                  </span>
+        </div>
+        <div class="top2">
+            <h2 class="logo">
+                Art Store
+            </h2>
+            <span class="search">
+                      <input type="text">
+                      <a href="Search_page.html"><button>Search</button></a>
+                  </span>
+            <nav>
+                <a href="Home_page.html">首页</a>
+                <a href="Search_page.html">搜索</a>
+                <a href="Goods_page.html">详情</a>
+                <a>发布艺术品</a>
+            </nav>
+            <div id="track">
+                您的足迹：
+            </div>
+        </div>
+
+<div id="position">
+        <h2 id="cart">购物车</h2>
+        <div id="center">
+            <section class="goods">
+               <a href="Goods_page.html"> <img src="images/subjects/square-medium/18.jpg"></a>
+                <h3>Tabacco pipe</h3>
+                <p style="font-family: 'Papyrus'">Michelangelo-Buonarroti</p>
+                <p>This works is so good</p>
+                <button class="button1">★价格：$120</button>
+                <button class="delete">の删除</button>
+            </section>
+            <section class="goods">
+                <a href="Goods_page.html"> <img src="images/subjects/square-medium/4.jpg"></a>
+                <h3>Fighting</h3>
+                <p style="font-family: 'Papyrus'">Camille Pissarro</p>
+                <p>This one is not bad</p>
+                <button class="button1">★价格：$120</button>
+                <button class="delete">の删除</button>
+            </section>
+            <div class="empty">
+                <em>您的购物车是空的哦，请快去采购商品吧！</>
+            </div>
+            <section class="buttons">
+                <button><</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>10</button>
+                <button>11</button>
+                <button>12</button>
+                <button>13</button>
+                <button>14</button>
+                <button>15</button>
+                <button>></button>
+            </section>
+            <button id="pay">➦结款:$<em id="cost">240</em></button>
+        </div>
+
+         </div>
+
+
+
+
+        <div id="LoginBox" >
+
+
+
+
+            <button title="关闭窗口" class="close_btn" id="close_btn">×</button>
+            <br>
+            <br>
+            <div class="row1">
+                Welcome to Art Store
+            </div>
+
+            <div class="row">
+                用户名:
+                <input type="text" id="txtName" placeholder="账号" />
+
+            </div>
+            <label id="login_txtName_Warning"></label>
+
+            <div class="row">
+                密&nbsp;&nbsp;&nbsp;&nbsp;码:
+                <input type="password" id="txtPwd" placeholder="密码"  />
+
+            </div>
+            <label id="login_txtPwd_Warning"></label>
+
+            <div class="row">
+                <span id="rand_code"></span>
+                <input id="security_code" type="number" placeholder="验证码" >
+
+            </div>
+
+            <label id="login_Security_Warning"></label>
+
+
+            <br>
+            <button id="login">登 陆</button>
+
+
+
+        </div>
+
+        <div id="registerbox" >
+            <button title="关闭窗口" class="close_btn" id="close_btn2">×</button>
+            <br>
+            <br>
+            <div class="row1">
+                Welcome to Art Store
+            </div>
+            <div class="input">
+
+                <div class="row2">
+                    账号：<input type="" id="register_Name" placeholder="账号" />
+                </div>
+
+                <label id="register_Name_Warning" class="warning" style="text-align: center"></label>
+
+                <div class="row2">
+                    密码：<input type="password" id="register_Pwd" placeholder="密码"  />
+                </div>
+
+                <label id="register_Pwd_Warning" class="warning" style="text-align: center"></label>
+
+                <div class="row2">
+                    确认密码：<input type="password"  placeholder="再次输入密码" id="register_PwdEnsure" />
+                </div>
+
+                <label id="register_PwdEnsure_Warning" class="warning" style="text-align: center"></label>
+                <div class="row2">
+
+                    电子邮箱: <input id="register_email" type="text" placeholder="电子邮箱" >
+                </div>
+                <label id="register_email_Warning" class="warning" style="text-align: center"></label>
+
+                <div class="row2">
+                    <span id="register_rand_code"></span>
+                    <input id="register_security_code" type="number" placeholder="验证码" >
+                </div>
+
+
+            </div>
+            <button id="register">注册</button>
+
+
+
+        </div>
+
+        <div class="mask">
+        </div>
+        <div class="page_information">购物车</div>
+</body>
+</html>

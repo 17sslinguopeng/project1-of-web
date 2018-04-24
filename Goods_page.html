@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goods</title>
+    <script src="javascript/jquery-3.3.1.js"></script>
+    <script src="javascript/login.js"></script>
+    <script src="javascript/register.js"></script>
+    <script src="javascript/Goods_page.js"></script>
+    <script src="javascript/cookie.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/top.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/login_and_register.css">
+    <link rel="stylesheet" type="text/css" href="css/Goods_page.css">
+</head>
+<body>
+
+      <div class="top">
+          <em class="welcome">
+               欢迎来到Art Store
+          </em>
+          <label id="userName">未登录</label>
+
+          <span class="before_login">
+              <a href="Home_page.html">首页</a>
+               <a href="javascript:void(0)" onclick="login()">登陆</a>
+                          <a href="javascript:void(0)" onclick="register()">注册</a>
+              <a href="Search_page.html">搜索</a>
+          </span>
+
+          <span class="after_login">
+              <a href="Home_page.html">首页</a>
+              <a href="shopping_cart_page.html">购物车</a>
+              <a href="Personal_information_page.html">个人信息</a>
+              <a href="Search_page.html">搜索</a>
+              <a href="javascript:void(0) " onclick="outLogin()">注销</a>
+          </span>
+      </div>
+      <div class="top2">
+          <h2 class="logo">
+              Art Store
+          </h2>
+          <span class="search">
+              <input type="text">
+              <a href="Search_page.html"><button>Search</button></a>
+          </span>
+          <nav>
+          <a href="Home_page.html">首页</a>
+          <a href="Search_page.html">搜索</a>
+          <a href="Goods_page.html">详情</a>
+          </nav>
+          <div id="track">
+              您的足迹：
+          </div>
+      </div>
+
+      <div id="position">
+      <div id="goods_imformation">
+          <h1 class="name">The Café Terrace on the Place du Forum</h1>
+          <a href="Search_page.html" class="author">by Vincent Willem van Gogh</a>
+          <br>
+          <div id="img_box">
+
+                   <div id="init_img_box">
+                       <img src="images/works/medium/013010.jpg">
+                       <div id="hover_box"></div>
+                   </div>
+
+                   <div id="show_box">
+                       <img src="images/works/medium/013010.jpg">
+                   </div>
+
+          </div>
+          <div id="introduction">
+              <h3 class="introduction">The Art Book is the first ever fully-illustrated art dictionary. </h3>
+              <em class="price">price:</em>
+
+              <em class="value">100,000</em>
+                  <br>
+              <button class="button1" onclick="alert('添加成功!')">★Add to Wish List</button>
+              <button class="button1" onclick="alert('添加成功！')">🛒Add to Shopping cart</button>
+              <table border="1" cellspacing="0">
+                  <caption>
+                     product details
+                  </caption>
+                  <tr>
+                      <td>Date</td>
+                      <td>1922</td>
+                  </tr>
+                  <tr>
+                      <td>Medium</td>
+                      <td>Oil on Canvas </td>
+                  </tr>
+                  <tr>
+                      <td>Dimensions</td>
+                      <td>100cm*80cm </td>
+                  </tr>
+                  <tr>
+                      <td>Home</td>
+                      <td>BartiMore Art Meseum</td>
+                  </tr>
+                  <tr>
+                      <td>Genres</td>
+                      <td>Neociassical </td>
+                  </tr>
+                  <tr>
+                      <td>Subjects</td>
+                      <td>People Family </td>
+                  </tr>
+                  <tr>
+                      <td>Heat</td>
+                      <td>13</td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+
+          <section id="recommendation">
+              <table border="1" cellspacing="0" >
+                  <caption>
+                      流行艺术家
+                  </caption>
+
+                  <tr><td ><a href="Search_page.html">Leonardo Da Vinci</a></td></tr>
+                  <tr><td ><a href="Search_page.html">Vincent Van Gogh</a></td></tr>
+                  <tr><td ><a href="Search_page.html">Pablo Picasso</a></td></tr>
+                  <tr><td ><a href="Search_page.html">Jean-François Millet</a></td></tr>
+                  <tr><td ><a href="Search_page.html">Piet Cornelies Mondrain</a></td></tr>
+                  <tr><td ><a href="Search_page.html">Claude Monet</a></td></tr>
+              </table>
+              <table border="1" cellspacing="0">
+                  <caption>
+                      流行流派
+                  </caption>
+                  <tr><td ><a href="Search_page.html">Byzantine</a></td></tr>
+                  <tr><td ><a href="Search_page.html">Romanesque</a></td></tr>
+                  <tr><td ><a href="Search_page.html">Gothic</a></td></tr>
+                  <tr><td ><a href="Search_page.html">Baroque</a></td></tr>
+                  <tr><td ><a href="Search_page.html">Classicism</a></td></tr>
+                  <tr><td ><a href="Search_page.html">Realism</a></td></tr>
+              </table>
+          </section>
+      </div>
+
+
+
+
+
+      <div id="LoginBox" >
+
+
+
+
+          <button title="关闭窗口" class="close_btn" id="close_btn">×</button>
+          <br>
+          <br>
+          <div class="row1">
+              Welcome to Art Store
+          </div>
+
+          <div class="row">
+              用户名:
+              <input type="text" id="txtName" placeholder="账号" />
+
+          </div>
+          <label id="login_txtName_Warning"></label>
+
+          <div class="row">
+              密&nbsp;&nbsp;&nbsp;&nbsp;码:
+              <input type="password" id="txtPwd" placeholder="密码"  />
+
+          </div>
+          <label id="login_txtPwd_Warning"></label>
+
+          <div class="row">
+              <span id="rand_code"></span>
+              <input id="security_code" type="number" placeholder="验证码" >
+
+          </div>
+
+          <label id="login_Security_Warning"></label>
+
+
+          <br>
+          <button id="login">登 陆</button>
+
+
+
+      </div>
+
+      <div id="registerbox" >
+          <button title="关闭窗口" class="close_btn" id="close_btn2">×</button>
+          <br>
+          <br>
+          <div class="row1">
+              Welcome to Art Store
+          </div>
+          <div class="input">
+
+              <div class="row2">
+                  账号：<input type="" id="register_Name" placeholder="账号" />
+              </div>
+
+              <label id="register_Name_Warning" class="warning" style="text-align: center"></label>
+
+              <div class="row2">
+                  密码：<input type="password" id="register_Pwd" placeholder="密码"  />
+              </div>
+
+              <label id="register_Pwd_Warning" class="warning" style="text-align: center"></label>
+
+              <div class="row2">
+                  确认密码：<input type="password"  placeholder="再次输入密码" id="register_PwdEnsure" />
+              </div>
+
+              <label id="register_PwdEnsure_Warning" class="warning" style="text-align: center"></label>
+              <div class="row2">
+
+                  电子邮箱: <input id="register_email" type="text" placeholder="电子邮箱" >
+              </div>
+              <label id="register_email_Warning" class="warning" style="text-align: center"></label>
+
+              <div class="row2">
+                  <span id="register_rand_code"></span>
+                  <input id="register_security_code" type="number" placeholder="验证码" >
+              </div>
+
+
+          </div>
+          <button id="register">注册</button>
+
+
+
+      </div>
+
+      <div class="mask">
+      </div>
+      <span class="page_information">商品详情</span>
+</body>
+</html>

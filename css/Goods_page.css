@@ -1,0 +1,137 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+   min-width: 1400px;
+    width: 100%;
+    height: 800px;
+}
+
+
+#goods_imformation .name ,.author{
+    margin: 1em 1em 1em 0em;
+}
+.name{
+    font-family: Papyrus;
+    font-size: 25px;
+    margin-bottom: 0.5em;
+}
+.author{
+    font-family:"Brush Script MT" ;
+    margin-bottom: 0.5em;
+    font-size: 20px;
+    color: #444444;
+}
+#goods_imformation{
+    position: absolute;
+    left: 6%;
+    top: 0%;
+    min-width: 900px;
+    width: 70%;
+    /*padding: 1em 1em 1em 1em;*/
+}
+#goods_imformation #introduction{
+    position: absolute;
+    left: 38%;
+    top: 100%;
+    font-family: "Apple Chancery";
+}
+.price{
+    font-family: "Bangla MN";
+}
+.button1{
+    width: 200px;
+    height: 40px;
+}
+
+
+#goods_imformation table{
+    border: gray;
+    border-style: solid;
+    margin-top:1em ;
+    min-width: 500px;
+}
+#goods_imformation table caption{
+    height: 25px;
+    background-color:gray;
+    padding: 1em 1em 1em 1em;
+}
+#goods_imformation table tr td{
+
+    height: 30px;
+    text-align: left;
+}
+
+
+
+ #recommendation{
+    min-width: 300px;
+    width: 400px;
+    position: absolute;
+    right: 0%;
+}
+ #recommendation a{
+     text-decoration: none;
+     color: #333333;
+     font-family: "Brush Script MT";
+ }
+#recommendation table{
+    border: deepskyblue;
+    border-style: solid;
+    margin-bottom: 2em;
+}
+#recommendation table caption{
+    height: 25px;
+    background-color:deepskyblue;
+    padding: 1em 1em 1em 1em;
+}
+#recommendation table tr td {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+
+#img_box{
+    position: absolute;
+
+}
+#init_img_box{
+    width: 350px;
+    height: 550px;
+    overflow: hidden;
+}
+#init_img_box img{
+    width: 350px;
+    height: 100%;
+}
+#hover_box{
+    display:none;
+    position:absolute;
+    top: 0;
+    background:#09f;
+    border:1px solid #09f;
+    height:75px;
+    width:100px;
+    cursor:move;
+    z-index:10;
+}
+#show_box{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    background-color: black;
+    display: none;
+    height: 150px;
+    width: 200px;
+    z-index: 10;
+    overflow: hidden;
+}
+#show_box img{
+
+    position:absolute;
+    height:1100px;
+    width:700px;
+
+}

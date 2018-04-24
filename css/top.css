@@ -1,0 +1,83 @@
+.top{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 2em;
+}
+.top a{
+    color: white;
+    margin: 1em;
+    text-decoration: none;
+}
+.top a:hover{
+    color: #0099ff;
+}
+.top2{
+    width: 100%;
+    padding: 0.5em;
+}
+
+.welcome {
+    font-size: 1.5em;
+    font-family: Papyrus;
+    margin: 0.2em 1em 1em 1em;
+}
+.before_login{
+    margin: 0.2em 1em 1em 1em;
+    float: right;
+}
+.after_login{
+    margin: 0.2em 1em 1em 1em;
+    float: right;
+    display: none;
+}
+.logo{
+    font-family: "Apple Chancery" ;
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
+.search{
+    margin: 0.5em;
+    float: right;
+}
+nav{
+    background-color: darkgrey;
+    color: black;
+    padding: 1em 1em 1em 1em;
+}
+nav a{
+    color: black;
+    margin: 0.5em 2em 0.5em 2em;
+}
+.top2 nav a{
+    text-decoration: none;
+}
+.top2 input{
+    margin-top: 0.2em;
+    width: 150px;
+    height: 25px;
+}
+.top2 button{
+    background-color: deepskyblue;
+    border-radius:50% 50% 50% 50%;
+    width: 80px;
+    height: 25px;
+}
+#track{
+    color: #999999;
+    margin: 0.5em;
+}
+#track label{
+    padding: 0.2em;
+    border: none;
+    color: #999999;
+    width: 100px;
+    height: 40px;
+    cursor:pointer
+}
+.tracks :hover{
+
+
+}

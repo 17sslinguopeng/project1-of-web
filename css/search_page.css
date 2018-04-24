@@ -1,0 +1,71 @@
+.result{
+
+    border: solid 1px coral;
+    padding: 1em;
+    float: left;
+    background-color: bisque;
+    margin: 1em;
+    width: 300px;
+}
+form{
+    float: right;
+}
+#center{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+#results{
+    position: relative;
+    top: 20%;
+    left: 5%;
+}
+section img{
+    float: left;
+    margin: 1em;
+}
+
+.buttons{
+    clear: both;
+    margin: 2em;
+
+}
+.buttons button{
+    border: solid deepskyblue;
+    width: 50px;
+    height: 30px;
+    color: deepskyblue;
+    margin: 0em;
+}
+.result button{
+    background-color: aqua;
+    height: 30px;
+    width: 70px;
+    margin-left: 2em;
+    margin-right: 2em;
+    cursor: pointer;
+}
+.result .btl{
+    float: left;
+}
+.result .btr{
+    float: right;
+}
+.name{
+    font-family: Papyrus;
+}
+.description{
+    font-family: "Brush Script MT";
+}
+#empty{
+
+    margin: auto;
+    display: none;
+    width: 85%;
+    text-align: center;
+    font-size: 25px;
+    color: gray;
+    height: 400px;
+    line-height: 300px;
+    background-color: lavender;
+}

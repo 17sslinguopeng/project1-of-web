@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <script src="javascript/jquery-3.3.1.js"></script>
+    <script src="javascript/login.js"></script>
+    <script src="javascript/register.js"></script>
+    <script src="javascript/cookie.js"></script>
+    <script src="javascript/Search_page.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/top.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/login_and_register.css">
+    <link rel="stylesheet" type="text/css" href="css/search_page.css">
+</head>
+<body>
+        <div class="top">
+            <em class="welcome">
+                欢迎来到Art Store
+            </em>
+            <label id="userName">未登录</label>
+
+            <span class="before_login">
+                      <a href="Home_page.html">首页</a>
+                       <a href="javascript:void(0)" onclick="login()">登陆</a>
+                                  <a href="javascript:void(0)" onclick="register()">注册</a>
+                      <a href="Search_page.html">搜索</a>
+                  </span>
+
+            <span class="after_login">
+                      <a href="Home_page.html">首页</a>
+                      <a href="shopping_cart_page.html">购物车</a>
+                      <a href="Personal_information_page.html">个人信息</a>
+                      <a href="Search_page.html">搜索</a>
+                      <a href="javascript:void(0) " onclick="outLogin()">注销</a>
+                  </span>
+        </div>
+        <div class="top2">
+            <h2 class="logo">
+                Art Store
+            </h2>
+            <span class="search">
+                      <input type="text">
+                      <a href="Search_page.html"><button>Search</button></a>
+                  </span>
+            <nav>
+                <a href="Home_page.html">首页</a>
+                <a href="Search_page.html">搜索</a>
+                <a href="Goods_page.html">详情</a>
+                <a>发布艺术品</a>
+            </nav>
+            <div id="track">
+                您的足迹：
+            </div>
+        </div>
+
+<div id="position">
+              <div id="center">
+              <h2>搜索结果</h2>
+
+                  <button id="1" style="width: 100px;height: 40px;background-color: #0099ff;"
+                          onclick="$('#position').remove();$('#empty').show()">清空搜索</button>
+
+              <form>
+                  排序方式：
+                  <input type="radio" name="sort">
+                  价格
+                  <input type="radio" name="sort">
+                  热度
+                  <input type="radio" checked name="sort">
+                  标题
+              </form>
+                  <br>
+             <div id="results">
+             <section class="result">
+                 <img src="images/works/square-small/001050.jpg">
+                 <h3 class="name">A Man...</h3>
+                 <em class="author">Leonardo Da Vinci</em>
+                 <hr>
+                 <p class="description">The Starry Night' was not Van Gogh's first depiction of a night sky.</p>
+                 <a href="Goods_page.html"> <button class="btl">查看</button></a>
+                 <button class="btr">热度:0</button>
+             </section>
+
+                 <section class="result">
+                     <img src="images/works/square-small/001100.jpg">
+                     <h3 class="name">The Starry Night</h3>
+                     <em class="author">Vincent Van Gogh</em>
+                     <hr>
+                     <p class="description">Vincent van Gogh's The Cafe Terrace stands
+                         as one of the painter's </p>
+                     <a href="Goods_page.html"> <button class="btl">查看</button></a>
+                     <button class="btr">热度:0</button>
+                 </section>
+
+                 <section class="result">
+                     <img src="images/works/square-small/001130.jpg">
+                     <h3 class="name">Oil on canvas</h3>
+                     <em class="author">Leonardo Da Vinci</em>
+                     <hr>
+                     <p class="description">He is universally recognized arts master and
+                         great scientist. </p>
+                     <a href="Goods_page.html"> <button class="btl">查看</button></a>
+                     <button class="btr">热度:0</button>
+                 </section>
+
+                 <section class="result">
+                     <img src="images/works/square-small/001140.jpg">
+                     <h3 class="name">Portrait of Elenor</h3>
+                     <em class="author">Claude Monet</em>
+                     <hr>
+                     <p class="description">It is also, without question, one of the most famous
+                         produced in Van Gogh's</p>
+                     <a href="Goods_page.html"> <button class="btl">查看</button></a>
+                     <button class="btr">热度:0</button>
+                 </section>
+
+                 <section class="result">
+                     <img src="images/works/square-small/001050.jpg">
+                     <h3 class="name">The Starry Night</h3>
+                     <em class="author">Vincent Van Gogh</em>
+                     <hr>
+                     <p class="description">Vincent van Gogh's The Cafe Terrace stands
+                         as one of the painter's</p>
+                     <a href="Goods_page.html"> <button class="btl">查看</button></a>
+                     <button class="btr">热度:0</button>
+                 </section>
+
+                 <section class="result">
+                     <img src="images/works/square-small/001170.jpg">
+                     <h3 class="name">Portrait of Elenor</h3>
+                     <em class="author">Leonardo Da Vinci</em>
+                     <hr>
+                     <p class="description">The Starry Night' was not Van Gogh's first depiction
+                         of a night sky.</p>
+                     <a href="Goods_page.html"> <button class="btl">查看</button></a>
+                     <button class="btr">热度:0</button>
+                 </section>
+
+                 <section class="result">
+                     <img src="images/works/square-small/001180.jpg">
+                     <h3 class="name">A Man...</h3>
+                     <em class="author">Pablo Picasso</em>
+                     <hr>
+                     <p class="description">He is universally recognized arts master and
+                         great scientist. </p>
+                     <a href="Goods_page.html"> <button class="btl">查看</button></a>
+                     <button class="btr">热度:0</button>
+                 </section>
+
+                 <section class="result">
+                     <img src="images/works/square-small/001190.jpg">
+                     <h3 class="name">Oil on canvas</h3>
+                     <em class="author">Vincent Van Gogh</em>
+                     <hr>
+                     <p class="description">It is also, without question, one of the most famous
+                         produced in Van Gogh's </p>
+                     <a href="Goods_page.html"> <button class="btl">查看</button></a>
+                     <button class="btr">热度:0</button>
+                 </section>
+                 <section class="result">
+                     <img src="images/works/square-small/001260.jpg">
+                     <h3 class="name">The Starry Night</h3>
+                     <em class="author">Leonardo Da Vinci</em>
+                     <hr>
+                     <p class="description">Vincent van Gogh's The Cafe Terrace stands
+                         as one of the painter's </p>
+                     <a href="Goods_page.html"> <button class="btl">查看</button></a>
+                     <button class="btr">热度:0</button>
+                 </section>
+                 <section class="result">
+                     <img src="images/works/square-small/001270.jpg">
+                     <h3 class="name">Portrait of Elenor</h3>
+                     <em class="author">Claude Monet</em>
+                     <hr>
+                     <p class="description">The Starry Night' was not Van Gogh's first depiction
+                         of a night sky.</p>
+                     <a href="Goods_page.html"> <button class="btl">查看</button></a>
+                     <button class="btr">热度:0</button>
+                 </section>
+                 <section class="result">
+                     <img src="images/works/square-small/001280.jpg">
+                     <h3 class="name">A Man...</h3>
+                     <em class="author">Pablo Picasso</em>
+                     <hr>
+                     <p class="description">He is universally recognized arts master and
+                         great scientist. </p>
+                     <a href="Goods_page.html"> <button class="btl">查看</button></a>
+                     <button class="btr">热度:0</button>
+                 </section>
+                 <section class="result">
+                     <img src="images/works/square-small/002020.jpg">
+                     <h3 class="name">Oil on canvas</h3>
+                     <em class="author">Leonardo Da Vinci</em>
+                     <hr>
+                     <p class="description">It is also, without question, one of the most famous
+                         produced in Van Gogh's </p>
+                     <a href="Goods_page.html"> <button class="btl">查看</button></a>
+                     <button class="btr">热度:0</button>
+                 </section>
+             </div>
+
+                 <section class="buttons">
+                     <button><</button>
+                     <button>1</button>
+                     <button>2</button>
+                     <button>3</button>
+                     <button>5</button>
+                     <button>6</button>
+                     <button>7</button>
+                     <button>8</button>
+                     <button>9</button>
+                     <button>10</button>
+                     <button>11</button>
+                     <button>12</button>
+                     <button>13</button>
+                     <button>14</button>
+                     <button>15</button>
+                     <button>16</button>
+                     <button>17</button>
+                     <button>18</button>
+                     <button>19</button>
+                     <button>20</button>
+                     <button>></button>
+                 </section>
+
+              </div>
+          </div>
+          <div id="empty">
+              无搜索结果
+          </div>
+
+
+        <div id="LoginBox" >
+
+
+
+
+            <button title="关闭窗口" class="close_btn" id="close_btn">×</button>
+            <br>
+            <br>
+            <div class="row1">
+                Welcome to Art Store
+            </div>
+
+            <div class="row">
+                用户名:
+                <input type="text" id="txtName" placeholder="账号" />
+
+            </div>
+            <label id="login_txtName_Warning"></label>
+
+            <div class="row">
+                密&nbsp;&nbsp;&nbsp;&nbsp;码:
+                <input type="password" id="txtPwd" placeholder="密码"  />
+
+            </div>
+            <label id="login_txtPwd_Warning"></label>
+
+            <div class="row">
+                <span id="rand_code"></span>
+                <input id="security_code" type="number" placeholder="验证码" >
+
+            </div>
+
+            <label id="login_Security_Warning"></label>
+
+
+            <br>
+            <button id="login">登 陆</button>
+
+
+
+        </div>
+
+        <div id="registerbox" >
+            <button title="关闭窗口" class="close_btn" id="close_btn2">×</button>
+            <br>
+            <br>
+            <div class="row1">
+                Welcome to Art Store
+            </div>
+            <div class="input">
+
+                <div class="row2">
+                    账号：<input type="" id="register_Name" placeholder="账号" />
+                </div>
+
+                <label id="register_Name_Warning" class="warning" style="text-align: center"></label>
+
+                <div class="row2">
+                    密码：<input type="password" id="register_Pwd" placeholder="密码"  />
+                </div>
+
+                <label id="register_Pwd_Warning" class="warning" style="text-align: center"></label>
+
+                <div class="row2">
+                    确认密码：<input type="password"  placeholder="再次输入密码" id="register_PwdEnsure" />
+                </div>
+
+                <label id="register_PwdEnsure_Warning" class="warning" style="text-align: center"></label>
+                <div class="row2">
+
+                    电子邮箱: <input id="register_email" type="text" placeholder="电子邮箱" >
+                </div>
+                <label id="register_email_Warning" class="warning" style="text-align: center"></label>
+
+                <div class="row2">
+                    <span id="register_rand_code"></span>
+                    <input id="register_security_code" type="number" placeholder="验证码" >
+                </div>
+
+
+            </div>
+            <button id="register">注册</button>
+
+
+
+        </div>
+
+        <div class="mask">
+            </div>
+           <div class="page_information">搜索页面</div>
+</body>
+</html>

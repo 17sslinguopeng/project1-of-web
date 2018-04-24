@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Information</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/top.css">
+
+    <link rel="stylesheet" type="text/css" href="css/personal_information_page.css">
+    <link rel="stylesheet" type="text/css" href="css/login_and_register.css">
+    <script src="javascript/jquery-3.3.1.js"></script>
+    <script src="javascript/login.js"></script>
+    <script src="javascript/register.js"></script>
+    <script src="javascript/recharge.js"></script>
+    <script src="javascript/cookie.js"></script>
+</head>
+<body>
+        <div class="top">
+            <em class="welcome">
+                欢迎来到Art Store
+            </em>
+            <label id="userName">未登录</label>
+
+            <span class="before_login">
+                      <a href="Home_page.html">首页</a>
+                       <a href="javascript:void(0)" onclick="login()">登陆</a>
+                                  <a href="javascript:void(0)" onclick="register()">注册</a>
+                      <a href="Search_page.html">搜索</a>
+                  </span>
+
+            <span class="after_login">
+                      <a href="Home_page.html">首页</a>
+                      <a href="shopping_cart_page.html">购物车</a>
+                      <a href="Personal_information_page.html">个人信息</a>
+                      <a href="Search_page.html">搜索</a>
+                      <a href="javascript:void(0) " onclick="outLogin()">注销</a>
+                  </span>
+        </div>
+        <div class="top2">
+            <h2 class="logo">
+                Art Store
+            </h2>
+            <span class="search">
+                      <input type="text">
+                      <a href="Search_page.html"><button>Search</button></a>
+                  </span>
+            <nav>
+                <a href="Home_page.html">首页</a>
+                <a href="Search_page.html">搜索</a>
+                <a href="Goods_page.html">详情</a>
+                <a>发布艺术品</a>
+            </nav>
+            <div id="track">
+                您的足迹：
+            </div>
+        </div>
+
+<section id="information">
+
+         <p>用户：sdad</p>
+         <p>电话：92830381073</p>
+         <p>邮箱：xxx@xx.cn</p>
+         <p>住址：china   </p>
+         <p>余额: <em id="money">0</em>元</p>
+         <button id="recharge">充值</button>
+     </section>
+
+      <section id="up_works">
+          <p>我上传的艺术品：</p>
+          <table border="1">
+              <tr>
+                  <td>
+                      订单编号：3892083091
+                  </td>
+                  <td>
+                      商品名称：Portrait of Elenor
+                  </td>
+                  <td>
+                      作者：Claude Monet
+                  </td>
+                  <td>介绍:it is not bad</td>
+              </tr>
+              <tr>
+                  <td>
+                      订单编号：12312332215
+                  </td>
+                  <td>
+                      商品名称：Oil on canvas
+                  </td>
+                  <td>
+                      作者：Claude Monet
+                  </td>
+                  <td>介绍:it is excellent</td>
+              </tr>
+          </table>
+      </section>
+
+      <section id="bought_works">
+           <p>我购买的艺术品：</p>
+           <table border="1">
+               <tr>
+                   <td>
+                       订单编号：281738122
+                   </td>
+                   <td>
+                       商品名称：The Starry Night
+                   </td>
+                   <td>
+                       订单时间：2018-4-5
+                   </td>
+                   <td>订单金额:$200</td>
+               </tr>
+               <tr>
+                   <td>
+                       订单编号：123123324
+                   </td>
+                   <td>
+                       商品名称：Tabacco pipe
+                   </td>
+                   <td>
+                       订单时间：2018-4-5
+                   </td>
+                   <td>订单金额:$200</td>
+               </tr>
+           </table>
+      </section>
+
+       <section id="sold_works">
+           <p>我卖出的艺术品：</p>
+           <table border="1">
+               <tr>
+                   <td>
+                       订单编号：1231233245
+                   </td>
+                   <td>
+                       商品名称：Camille Pissarro
+                   </td>
+                   <td>
+                       订单时间：2018-4-5
+                   </td>
+                   <td>订单金额:$200</td>
+               </tr>
+               <tr>
+                   <td>
+                       订单编号：830432048
+                   </td>
+                   <td>
+                       商品名称：Oil on canvas
+                   </td>
+                   <td>
+                       订单时间：2018-4-5
+                   </td>
+                   <td>订单金额:$200</td>
+               </tr>
+           </table>
+       </section>
+
+
+            <div class="mask"></div>
+           <div id="rechargeDiv">
+               <button id="closeBtn">×</button>
+               <input type="number" placeholder="请输入金额">
+               <button id="rechargeBtn">确认充值</button>
+           </div>
+
+
+        <div id="LoginBox" >
+
+
+
+
+            <button title="关闭窗口" class="close_btn" id="close_btn">×</button>
+            <br>
+            <br>
+            <div class="row1">
+                Welcome to Art Store
+            </div>
+
+            <div class="row">
+                用户名:
+                <input type="text" id="txtName" placeholder="账号" />
+
+            </div>
+            <label id="login_txtName_Warning"></label>
+
+            <div class="row">
+                密&nbsp;&nbsp;&nbsp;&nbsp;码:
+                <input type="password" id="txtPwd" placeholder="密码"  />
+
+            </div>
+            <label id="login_txtPwd_Warning"></label>
+
+            <div class="row">
+                <span id="rand_code"></span>
+                <input id="security_code" type="number" placeholder="验证码" >
+
+            </div>
+
+            <label id="login_Security_Warning"></label>
+
+
+            <br>
+            <button id="login">登 陆</button>
+
+
+
+        </div>
+
+        <div id="registerbox" >
+            <button title="关闭窗口" class="close_btn" id="close_btn2">×</button>
+            <br>
+            <br>
+            <div class="row1">
+                Welcome to Art Store
+            </div>
+            <div class="input">
+
+                <div class="row2">
+                    账号：<input type="" id="register_Name" placeholder="账号" />
+                </div>
+
+                <label id="register_Name_Warning" class="warning" style="text-align: center"></label>
+
+                <div class="row2">
+                    密码：<input type="password" id="register_Pwd" placeholder="密码"  />
+                </div>
+
+                <label id="register_Pwd_Warning" class="warning" style="text-align: center"></label>
+
+                <div class="row2">
+                    确认密码：<input type="password"  placeholder="再次输入密码" id="register_PwdEnsure" />
+                </div>
+
+                <label id="register_PwdEnsure_Warning" class="warning" style="text-align: center"></label>
+
+
+
+                <div class="row2">
+                    <span id="register_rand_code"></span>
+                    <input id="register_security_code" type="number" placeholder="验证码" >
+
+                </div>
+
+            </div>
+            <button id="register">注册</button>
+
+
+
+        </div>
+
+       <div class="page_information">个人信息</div>
+
+
+</body>
+</html>
